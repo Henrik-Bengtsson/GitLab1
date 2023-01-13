@@ -71,3 +71,22 @@ git push -u origin feature2
 notepad fix2.txt
 git commit -a -m "Add git command to fix2.txt"
 git push
+
+18.
+git tag -a v1.0 -m "Version 1.0"
+
+19.
+git rebase -i HEAD~3
+reword add fix2.txt
+spuash Add git command to fix.txt
+pick Add .gitignore
+
+20.
+git switch -c feature3
+notepad fix2.txt
+git commit -a -m "Add git command 18-20"
+git switch main
+git merge feature3 --no-ff
+git push -f
+git push --tags
+git push -u origin feature3
